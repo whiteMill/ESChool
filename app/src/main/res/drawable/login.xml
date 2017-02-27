@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/animal_1"
+        android:duration="120"/>
+    <item
+        android:drawable="@drawable/animal_2"
+        android:duration="120"/>
+    <item
+        android:drawable="@drawable/animal_3"
+        android:duration="120"/>
+    <item
+        android:drawable="@drawable/animal_4"
+        android:duration="120"/>
+    <item
+        android:drawable="@drawable/animal_5"
+        android:duration="120"/>
+    <item
+        android:drawable="@drawable/animal_6"
+        android:duration="120"/>
+    <item
+        android:drawable="@drawable/animal_7"
+        android:duration="120"/>
+</animation-list>

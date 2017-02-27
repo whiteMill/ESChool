@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="layoutBackground">#ffffff</color>
+    <color name="contactTex">#1CC8AA</color>
+    <color name="contactBack">#C7FDF8</color>
+    <color name="tabColor">#14B09E</color>
+    <color name="tabTex">#AEAEAE</color>
+    <color name="line">#bfbfbf</color>
+    <color name="backgroundColor">#EFEEF4</color>
+    <color name="blackText">#000000</color>
+    <color name="contact_line">#0DB09D</color>
+    <color name="stu_layout">#D3F6F2</color>
+    <color name="stu_text_back">#49ECD7</color>
+    <color name="abc_color">#cccccc</color>
+    <color name="editTextColor">#a5a5a5</color>
+
+</resources>

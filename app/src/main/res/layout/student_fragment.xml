@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/layoutBackground"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/contact_line">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/student_center"
+            android:textColor="@color/layoutBackground"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/mScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/stu_layout"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:background="@color/stu_text_back"
+                              android:padding="5dp"
+                              android:text="@string/student_info"
+                              android:textColor="@color/blackText"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout android:layout_width="0dp"
+                                  android:layout_height="match_parent"
+                                  android:layout_weight="1"
+                                  android:orientation="vertical">
+
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:layout_weight="1"
+                                      android:gravity="center_vertical"
+                                      android:orientation="horizontal">
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:padding="5dp"
+                                      android:text="@string/student_name"
+                                      android:textColor="@color/blackText"/>
+                            <TextView
+                                android:id="@+id/stu_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="@string/student_names"
+                                android:textColor="@color/contactTex"/>
+                        </LinearLayout>
+
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:layout_weight="1"
+                                      android:gravity="center_vertical"
+                                      android:orientation="horizontal">
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:padding="5dp"
+                                      android:text="@string/student_card"
+                                      android:textColor="@color/blackText"/>
+                            <TextView android:id="@+id/stu_card"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:padding="5dp"
+                                      android:text="@string/default_stu_card"
+                                      android:textColor="@color/contactTex"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:layout_weight="1"
+                                      android:gravity="center_vertical"
+                                      android:orientation="horizontal">
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:padding="5dp"
+                                      android:text="@string/student_sex"
+                                      android:textColor="@color/blackText"/>
+                            <TextView android:id="@+id/stu_sex"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:padding="5dp"
+                                      android:text="@string/default_sex"
+                                      android:textColor="@color/contactTex"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:layout_weight="1"
+                                      android:gravity="center_vertical"
+                                      android:orientation="horizontal">
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:padding="5dp"
+                                      android:text="@string/student_age"
+                                      android:textColor="@color/blackText"/>
+                            <TextView android:id="@+id/stu_age"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:padding="5dp"
+                                      android:text="@string/default_stu_age"
+                                      android:textColor="@color/contactTex"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="0dp"
+                                  android:layout_height="match_parent"
+                                  android:layout_weight="1"
+                                  android:orientation="vertical">
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:layout_weight="1"
+                                      android:gravity="center_vertical"
+                                      android:orientation="horizontal">
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:padding="5dp"
+                                      android:text="@string/student_phone"
+                                      android:textColor="@color/blackText"/>
+                            <TextView android:id="@+id/stu_phone"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:padding="5dp"
+                                      android:text="@string/default_stu_phone"
+                                      android:textColor="@color/contactTex"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:layout_weight="1"
+                                      android:gravity="center_vertical"
+                                      android:orientation="horizontal">
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:padding="5dp"
+                                      android:text="@string/stu_class"
+                                      android:textColor="@color/blackText"/>
+                            <TextView android:id="@+id/stu_grade"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:padding="5dp"
+                                      android:text="@string/default_stu_class"
+                                      android:textColor="@color/contactTex"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:layout_weight="1"
+                                      android:gravity="center_vertical"
+                                      android:orientation="horizontal">
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:padding="5dp"
+                                      android:text="@string/stu_school"
+                                      android:textColor="@color/blackText"/>
+                            <TextView android:id="@+id/stu_School"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:padding="5dp"
+                                      android:text="@string/default_stu_school"
+                                      android:textColor="@color/contactTex"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:layout_weight="1"
+                                      android:gravity="center_vertical"
+                                      android:orientation="horizontal">
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:padding="5dp"
+                                      android:text="@string/stu_no"
+                                      android:textColor="@color/blackText"/>
+                            <TextView android:id="@+id/stu_no"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:padding="5dp"
+                                      android:text="@string/default_stu_no"
+                                      android:textColor="@color/contactTex"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/stu_layout"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp">
+
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_alignParentStart="true"
+                              android:layout_alignParentTop="true"
+                              android:layout_centerVertical="true"
+                              android:background="@color/stu_text_back"
+                              android:padding="5dp"
+                              android:text="@string/time_info"
+                              android:textColor="@color/blackText"/>
+                    <LinearLayout android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_alignParentEnd="true"
+                                  android:layout_centerVertical="true"
+                                  android:layout_marginEnd="8dp"
+                                  android:orientation="horizontal">
+                        <TextView android:id="@+id/current_time"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/default_time"
+                                  android:textColor="@color/blackText"/>
+                        <Button
+                            android:id="@+id/time_select"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/time_selector"
+                            android:text="@string/time_selector"
+                            android:textColor="@color/blackText"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                    <com.stk.view.ListViewForScrollView
+                              android:id="@+id/timeListView"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:visibility="gone"
+                             >
+                    </com.stk.view.ListViewForScrollView>
+
+                    <TextView android:id="@+id/noRecord"
+                              android:layout_width="match_parent"
+                              android:layout_height="75dp"
+                              android:gravity="center"
+                              android:textColor="@color/contactTex"
+                              android:textSize="20sp"
+                              android:paddingBottom="15dp"
+                              android:visibility="visible"
+                              android:text="@string/no_school_time"/>
+
+
+                   <!-- <LinearLayout android:layout_width="0dp"
+                                  android:layout_height="match_parent"
+                                  android:layout_weight="2"
+                                  android:orientation="vertical"
+                                  android:padding="5dp">
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:layout_weight="1"
+                                      android:gravity="center_vertical"
+                                      android:orientation="horizontal">
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_marginLeft="5dp"
+                                      android:padding="5dp"
+                                      android:text="进校时间:"
+                                      android:textColor="@color/blackText"/>
+                            <TextView android:id="@+id/in_school"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:padding="5dp"
+                                      android:text="8:30"
+                                      android:textColor="@color/contactTex"/>
+
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:layout_weight="1"
+                                      android:gravity="center_vertical"
+                                      android:orientation="horizontal">
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_marginLeft="5dp"
+                                      android:padding="5dp"
+                                      android:text="出校时间:"
+                                      android:textColor="@color/blackText"/>
+                            <TextView android:id="@+id/out_school"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:padding="5dp"
+                                      android:text="11:40"
+                                      android:textColor="@color/contactTex"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="0dp"
+                                  android:layout_height="match_parent"
+                                  android:layout_weight="1"
+                                  android:orientation="vertical">
+
+                        <RelativeLayout android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:padding="8dp">
+
+                            <Button android:id="@+id/in_video"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/time_btn_shape"
+                                    android:text="点击查看"
+                                    android:textColor="@color/blackText"
+                                    android:textSize="13sp"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:padding="8dp">
+
+                            <Button android:id="@+id/out_video"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:background="@drawable/time_btn_shape"
+                                    android:text="点击查看"
+                                    android:textColor="@color/blackText"
+                                    android:textSize="13sp"/>
+                        </RelativeLayout>
+                    </LinearLayout>-->
+             <!--   </FrameLayout>-->
+            </LinearLayout>
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="400dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/stu_layout">
+
+                <com.baidu.mapapi.map.MapView
+                    android:id="@+id/bmapView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true">
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_alignParentStart="true"
+                              android:layout_alignParentTop="true"
+                              android:background="@color/stu_text_back"
+                              android:padding="5dp"
+                              android:text="@string/map"
+                              android:textColor="@color/blackText"/>
+
+                    <RelativeLayout
+                        android:id="@+id/map_select_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:background="@color/stu_layout"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/map_time_select"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/recent_one_day"
+                            android:textColor="@color/contactTex"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="23dp"
+                            android:padding="5dp"
+                            android:layout_toEndOf="@+id/map_time_select"
+                            android:background="@drawable/down"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

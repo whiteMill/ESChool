@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape>
+            <!-- 填充的颜色 -->
+            <solid android:color="#BBEEE9" />
+            <stroke android:color="@color/tabColor"
+                    android:width="1dp"/>
+            <!-- 设置按钮的四个角为弧形 -->
+            <!-- android:radius 弧形的半径 -->
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/backgroundColor" />
+            <stroke android:color="@color/tabColor"
+                    android:width="1dp"/>
+            <!-- 设置按钮的四个角为弧形 -->
+            <!-- android:radius 弧形的半径 -->
+        </shape>
+    </item>
+</selector>

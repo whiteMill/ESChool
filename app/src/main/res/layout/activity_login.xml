@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/contact_line"
+    tools:context="com.stk.ui.LoginActivity">
+
+
+    <LinearLayout
+        android:id="@+id/login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView6"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/contact_re_shape"
+            android:orientation="horizontal">
+
+            <View android:layout_width="0.5dp"
+                  android:layout_height="match_parent"
+                  android:layout_centerVertical="true"
+                  android:layout_marginBottom="5dp"
+                  android:layout_marginStart="55dp"
+                  android:layout_marginTop="5dp"
+                  android:background="@color/contact_line"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="25dp"
+                android:background="@drawable/login_user"/>
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="65dp"
+                android:background="@null"
+                android:hint="@string/username_tip"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textColor="@color/contactTex"
+                android:textColorHint="@color/contactTex"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/contact_re_shape"
+            android:orientation="horizontal">
+
+            <View android:layout_width="0.5dp"
+                  android:layout_height="match_parent"
+                  android:layout_centerVertical="true"
+                  android:layout_marginBottom="5dp"
+                  android:layout_marginStart="55dp"
+                  android:layout_marginTop="5dp"
+                  android:background="@color/contact_line"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="25dp"
+                android:background="@drawable/login_pass"/>
+
+            <EditText
+                android:id="@+id/user_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="65dp"
+                android:background="@null"
+                android:hint="@string/pass_tips"
+                android:inputType="textPassword"
+                android:textColor="@color/contactTex"
+                android:textColorHint="@color/contactTex"
+                android:textSize="15sp"/>
+            <ImageView
+                android:id="@+id/eeye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/pass_in"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/rem_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/login_layout"
+        android:layout_marginStart="74dp"
+        android:text="@string/remember_name"/>
+
+
+    <TextView android:id="@+id/login_btn" android:layout_width="120dp"
+              android:layout_height="45dp"
+              android:layout_below="@+id/rem_box"
+              android:textSize="20sp"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="35dp"
+              android:background="@drawable/login_btn_shape"
+              android:gravity="center"
+              android:text="@string/login_name"
+              android:textColor="@color/contactTex"/>
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        app:srcCompat="@drawable/logo"/>
+
+
+</RelativeLayout>

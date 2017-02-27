@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.stk.ui.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/changeFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+    </LinearLayout>
+
+
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="0.5dp"
+      android:background="@color/line"
+    ></View>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/layoutBackground"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/StudentCenter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/student_pressed"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="@string/student_center"
+            android:textColor="@color/tabColor" />
+
+        <RadioButton
+            android:id="@+id/Contact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/contact_unpressed"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:text="@string/contacts"
+            android:textColor="@color/tabTex" />
+
+        <RadioButton
+            android:id="@+id/userCenter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/user_unpressed"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:text="@string/user_center"
+            android:textColor="@color/tabTex" />
+
+    </RadioGroup>
+
+
+
+</LinearLayout>
